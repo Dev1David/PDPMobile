@@ -1,15 +1,13 @@
-import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
+import {StyleSheet, View} from 'react-native';
 import { RootTabScreenProps } from '../types';
+
+import IconHeart from "../assets/images/SplashScreen/heart_icon_white.svg";
+import React from "react";
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabOneScreen.tsx" />
+      <IconHeart />
     </View>
   );
 }
@@ -19,6 +17,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: "red",
   },
   title: {
     fontSize: 20,

@@ -8,7 +8,11 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         backgroundColor: PRIMARY_COLOR,
     },
-
+    text: {
+        color: "#fff",
+        marginTop: 25,
+        fontSize: 24,
+    }
 });
 
 export default styles;
