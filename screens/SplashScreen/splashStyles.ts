@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         color: "#fff",
         marginTop: 25,
         fontSize: 24,
+        fontFamily: "PressStart2P-Regular"
     }
 });
 
