@@ -1,5 +1,5 @@
 import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
-import { CompositeScreenProps, NavigatorScreenParams } from '@react-navigation/native';
+import { CompositeScreenProps} from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import * as React from "react";
 
@@ -10,19 +10,19 @@ declare global {
 }
 
 export type RootStackParamList = {
-  Root: NavigatorScreenParams<RootTabParamList> | undefined;
   SplashScreen: undefined;
-  NotFound: undefined;
+  LoginScreen: undefined;
+  BottomTabNavigator: undefined;
+  WheelOfFortuneScreen: undefined;
 };
 
-export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
-  RootStackParamList,
-  Screen
->;
-
 export type RootTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+
+  DashboardScreen: undefined;
+  ShopScreen: undefined;
+  ProfileScreen: undefined;
+
+  AdminScreen?: undefined;
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> = CompositeScreenProps<

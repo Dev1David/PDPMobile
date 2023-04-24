@@ -1,0 +1,9 @@
+
+export const userTypes = {
+    CHECK_IS_VALID_USERS_TOKEN: "CHECK_IS_VALID_USERS_TOKEN",
+    UPDATE_USER_AVATAR_ID: "UPDATE_USER_AVATAR_ID",
+}
+
+export const adminTypes = {
+    ADMIN_GET_ALL_USERS: "ADMIN_GET_ALL_USERS",
+};
